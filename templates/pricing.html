@@ -1,0 +1,88 @@
+
+{% include 'header.html' %}
+
+      <!-- hero section -->
+    <div class="container-fluid px-4 py-0 mb-lg-0">
+      <header
+        class="masthead"
+        style="background-image: url('../static/assets/img/pricing-image.jpg')"
+        >
+        <div class="px-4 py-5 my-5 text-center">
+          <img class="d-block mx-auto mb-4" src="../static/assets/img/mvmedia-logo.png" alt="mv-logo" height="57">
+          <h1 class="display-5 fw-bold">Check out our Pricing Plans below</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Versatile pricing to meet your needs</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="#pricing">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Learn More</button>              
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- pricing cards -->
+    <div class="container px-4 py-5 mt-4" id="pricing">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <!-- card 1 -->
+      <div class="col">
+        <div class="card mt-2 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Bronze</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$50</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Per 1 hour of Raw Footage</li>
+              <li>1 episode</li>
+              <li>Expert advice</li>
+            </ul>
+            <a href="{{  url_for('contact_page')  }}">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact Us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    <!-- card 2 -->
+      <div class="col">
+        <div class="card mt-2 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Silver</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$150</h1>
+            <ul class="list-unstyled mt-3 mb-4">             
+              <li>Per 1 hour of Raw Footage</li>
+              <li>1 episode</li>
+              <li>1 Thumbnail</li>
+            </ul>
+            <a href="{{  url_for('contact_page')  }}">
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="col">
+        <div class="card mt-2 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Gold</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$200</h1>
+            <ul class="list-unstyled mt-3 mb-4">            
+              <li>Per 1 hour of Raw Footage</li>
+              <li>1 episode with titles and 10 shorts</li>
+              <li>1 Thumbnail</li>
+            </ul>
+            <a href="{{  url_for('contact_page')  }}">
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include 'footer.html' %}

@@ -1,0 +1,83 @@
+{% include 'header.html' %}
+
+
+    <!-- hero section -->
+    <div class="container-fluid px-4 py-0 mb-lg-0">
+      <header
+        class="masthead"
+        style="background-image: url('../static/assets/img/main-image.jpg')"
+        >
+        <div class="px-4 py-5 my-5 text-center">
+          <img class="d-block mx-auto mb-4" src="../static/assets/img/mvmedia-logo.png" alt="mv-logo" height="57">
+          <h1 class="display-5 fw-bold">Transform Your Vision into Reality</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Professional Video Editing, Graphics, and Podcast Production Services</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a href="#featured-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Learn More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- features section -->
+    <div class="container px-4 py-5 mt-4" id="featured-3">
+        <h2 class="pb-2 border-bottom">We Specialise in Post Production for Podcasts</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img src="../static/assets/img/video-editing-white.svg" height="45">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Video Editing</h3>
+            <p>Transform your raw footage into captivating videos with our professional video editing service. We enhance video quality, add seamless transitions, and ensure your content aligns perfectly with your brand's vision, making your story unforgettable.</p>
+            <a href="./services.html" class="icon-link">
+              More Sevices
+              <img src="../static/assets/img/chevron-right.svg" height="15">
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img src="../static/assets/img/motion-design-white-v2.svg" height="45">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Motion Design</h3>
+            <p>Bring your ideas to life with our expert motion design service. We create dynamic animations and visually stunning graphics that captivate and engage your audience.</p>
+            <a href="./services.html" class="icon-link">
+              More Sevices
+              <img src="../static/assets/img/chevron-right.svg" height="15">
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img src="../static/assets/img/graphic-design_v2.svg" height="45">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Graphic Design</h3>
+            <p>Elevate your brand with our professional graphic design service. We craft eye-catching visuals and compelling designs that effectively communicate your message and leave a lasting impression.</p>
+            <a href="./services.html" class="icon-link">
+              More Sevices
+              <img src="../static/assets/img/chevron-right.svg" height="15">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CTA section -->
+      <div class="container px-4 py-5 mt-4">
+        <div class="row flex-lg-row-reverse align-items-center g-0 py-0">
+          <div class="col-12 col-sm-12 col-lg-6">
+            <img src="../static/assets/img/3-01.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Ready to Elevate Your Content?</h1>
+            <p class="lead">Partner with Us for Professional Video Editing, Stunning Graphics, and High-Quality Podcast Production.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="{{  url_for('contact_page')  }}">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact Us</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include 'footer.html' %}

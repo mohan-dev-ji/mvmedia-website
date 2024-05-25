@@ -1,0 +1,46 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+    }
+
+.masthead {
+    background-image: url('./images/peter-stumpf-yk9VXp4W5-Q-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust height as needed */
+    color: white; /* Adjust text color if necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+/* .header-text {
+    color: white;
+    } */
+
+.container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+.card-cover {
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-container {
+    
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
