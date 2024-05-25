@@ -1,9 +1,15 @@
 from flask import Flask, render_template, request
 import requests
 import smtplib
+from dotenv import load_dotenv
+import os
 
-MY_EMAIL = "moveraitch@gmail.com"
-MY_PASSWORD = "drrr ivsh tzon rkgg"
+# Load environment variables from .env file
+dotenv_path = '/Volumes/SSD_02/Current_Projects/PYTHON-learning/portfolio-projects/mv-media-website/.env'
+load_dotenv(dotenv_path)
+
+MY_EMAIL = os.getenv("MY_EMAIL")
+MY_PASSWORD = os.getenv("MY_PASSWORD")
 
 app = Flask(__name__)
 
